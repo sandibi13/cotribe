@@ -8,6 +8,7 @@ import {
 
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css?url";
+import { ThemeProvider } from "~/components/theme-provider";
 
 export const meta: MetaFunction = () => {
   return [
@@ -34,7 +35,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body style={{ fontFamily: "inter, sans-serif" }}>
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
