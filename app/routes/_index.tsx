@@ -60,14 +60,16 @@ export default function IndexPage() {
                 Get started <ArrowRight className="w-3 h-3 ml-1" />
               </Link>
             </Button>
-            <Link
-              className="w-full transition duration-150 ease-in-out bg-opacity-25 text-zinc-200 hover:text-white"
-              to="https://github.com/sandibi13/codetribe"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Star on GitHub
-            </Link>
+            <Button variant="ghost" size="sm" asChild>
+              <Link
+                className="w-full transition duration-150 ease-in-out bg-opacity-25 text-zinc-200 hover:text-white"
+                to="https://github.com/sandibi13/codetribe"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Star on GitHub
+              </Link>
+            </Button>
           </div>
         </div>
 
