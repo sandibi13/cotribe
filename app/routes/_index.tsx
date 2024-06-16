@@ -20,7 +20,7 @@ export default function IndexPage() {
                 <li>
                   <Link
                     className="text-sm font-medium text-zinc-300 hover:text-white duration-500"
-                    to="#"
+                    to="/sign-in"
                   >
                     Sign in
                   </Link>
@@ -56,7 +56,7 @@ export default function IndexPage() {
 
           <div className="flex flex-col items-center max-w-xs mx-auto gap-4 sm:max-w-none sm:justify-center sm:flex-row sm:inline-flex">
             <Button size="sm" asChild>
-              <Link to="#">
+              <Link to="/sign-up">
                 Get started <ArrowRight className="w-3 h-3 ml-1" />
               </Link>
             </Button>
