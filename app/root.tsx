@@ -45,9 +45,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body style={{ fontFamily: "inter, sans-serif" }}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
+          <ScrollRestoration />
+          <Scripts />
         </ThemeProvider>
-        <ScrollRestoration />
-        <Scripts />
       </body>
     </html>
   );
