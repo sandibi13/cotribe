@@ -1,24 +1,16 @@
 import { Link, useLocation } from "@remix-run/react";
-import { Bell, Bookmark, Home, Mail, Menu, Search, User } from "lucide-react";
+import { Menu } from "lucide-react";
 import { UserButton } from "@clerk/remix";
 import { Button } from "~/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "~/components/ui/sheet";
 import { Logo } from "~/components/logo";
-
-const navLinks = [
-  { to: "/home", icon: Home, label: "Home" },
-  { to: "/explore", icon: Search, label: "Explore" },
-  { to: "/notifications", icon: Bell, label: "Notifications" },
-  { to: "/messages", icon: Mail, label: "Messages" },
-  { to: "/bookmarks", icon: Bookmark, label: "Bookmarks" },
-  { to: "/profile", icon: User, label: "Profile" },
-];
+import { navLinks } from "~/utils/links";
 
 export const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="flex h-14 items-center justify-between gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6 sm:hidden">
+    <header className="flex h-14 items-center justify-between gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6 sm:hidden rounded-lg shadow-lg mt-2 mx-2">
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="shrink-0">
