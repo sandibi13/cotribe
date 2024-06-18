@@ -15,6 +15,7 @@ import stylesheet from "~/tailwind.css?url";
 import { ThemeProvider } from "~/components/theme-provider";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 import { ClerkApp } from "@clerk/remix";
+import { dark } from "@clerk/themes";
 
 export const meta: MetaFunction = () => {
   return [
@@ -57,4 +58,8 @@ function App() {
   return <Outlet />;
 }
 
-export default ClerkApp(App);
+export default ClerkApp(App, {
+  appearance: {
+    baseTheme: dark,
+  },
+});
