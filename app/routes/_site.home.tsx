@@ -11,8 +11,12 @@ export const loader: LoaderFunction = async (args) => {
 
 export default function HomePage() {
   return (
-    <div>
-      <h1>Welcome to HomePage!</h1>
-    </div>
+    <>
+      <div className="flex-1 p-4">
+        <div className="border rounded-lg p-4 shadow-lg bg-muted/40 h-full">
+          <h1>Feeds</h1>
+        </div>
+      </div>
+    </>
   );
 }

@@ -11,8 +11,12 @@ export const loader: LoaderFunction = async (args) => {
 
 export default function BookmarksPage() {
   return (
-    <div>
-      <h1>Welcome to BookmarksPage!</h1>
-    </div>
+    <>
+      <div className="flex-1 p-4">
+        <div className="border rounded-lg p-4 shadow-lg bg-muted/40 h-full">
+          <h1>Bookmarks</h1>
+        </div>
+      </div>
+    </>
   );
 }

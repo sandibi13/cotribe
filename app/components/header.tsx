@@ -10,7 +10,7 @@ export const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="flex h-14 items-center justify-between gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6 sm:hidden rounded-lg shadow-lg mt-2 mx-2">
+    <header className="flex h-14 items-center justify-between gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6 sm:hidden rounded-lg shadow-lg mt-4 mx-4">
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="shrink-0">

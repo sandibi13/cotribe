@@ -30,11 +30,16 @@ export default function IndexPage() {
         </div>
       </header>
 
-      <div className="container md:flex justify-center items-center px-4 md:px-6 flex-1 mt-28 md:mt-0">
+      <div className="container md:flex justify-center items-center px-4 md:px-6 flex-1 mt-40 md:mt-0 lg:mt-0">
         <Particles className="absolute inset-0 -z-10" />
 
         <div className="flex flex-col items-center space-y-4 text-center p-4 md:w-1/2">
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tighter">
+          <p className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium">
+            <span>Cotribe is Open Source</span>
+            <ArrowRight className="ml-1 h-3 w-3" />
+          </p>
+
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tighter">
             A{" "}
             <span className="font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text bg-300% animate-gradient">
               Community-Driven
