@@ -15,7 +15,7 @@ export const Sidebar = () => {
             className="flex items-center justify-center lg:justify-start gap-2 font-semibold p-2"
           >
             <Logo className="h-8 w-8" />
-            <span className="hidden lg:inline">Codetribe</span>
+            <span className="hidden lg:inline">Cotribe</span>
           </Link>
         </div>
         <div className="flex-1 overflow-auto">

@@ -19,11 +19,11 @@ import { dark } from "@clerk/themes";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Codetribe" },
+    { title: "Cotribe" },
     {
       name: "description",
       content:
-        "Join CodeTribe, the ultimate social networking platform for developers to connect, collaborate, and share their coding journey.",
+        "Join Cotribe, the ultimate social networking platform to connect, collaborate, and share.",
     },
   ];
 };

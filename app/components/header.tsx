@@ -25,7 +25,7 @@ export const Header = () => {
               className="flex items-center gap-2 text-lg font-semibold"
             >
               <Logo className="h-8 w-8" />
-              <span className="sr-only">Codetribe</span>
+              <span className="sr-only">Cotribe</span>
             </Link>
             {navLinks.map(({ to, icon: Icon, label }) => (
               <Link

@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
 import { ArrowRight } from "lucide-react";
-import Globe from "~/components/globe";
 import { Logo } from "~/components/logo";
 import Particles from "~/components/particles";
 import { Button } from "~/components/ui/button";
@@ -42,7 +41,7 @@ export default function IndexPage() {
             </span>{" "}
             Social Platform for{" "}
             <span className="font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-transparent bg-clip-text bg-300% animate-gradient">
-              Developers
+              Everyone
             </span>{" "}
             to Connect
           </h1>
@@ -62,8 +61,7 @@ export default function IndexPage() {
             </Button>
             <Button variant="outline" size="sm" asChild>
               <Link
-                className="w-full transition duration-150 ease-in-out bg-opacity-25 text-zinc-200 hover:text-white"
-                to="https://github.com/sandibi13/codetribe"
+                to="https://github.com/sandibi13/cotribe"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -71,10 +69,6 @@ export default function IndexPage() {
               </Link>
             </Button>
           </div>
-        </div>
-
-        <div className="relative md:w-1/2">
-          <Globe />
         </div>
       </div>
     </section>
