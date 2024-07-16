@@ -1,9 +1,11 @@
 import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react";
 
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui()],
 } satisfies Config;

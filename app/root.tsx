@@ -5,7 +5,25 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import "./tailwind.css";
+
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import stylesheet from "~/tailwind.css?url";
+import { NextUIProvider } from "@nextui-org/react";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Cotribe" },
+    {
+      name: "description",
+      content:
+        "Connect, share, and engage with friends on Cotribe - your social hub",
+    },
+  ];
+};
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,9 +35,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+        <NextUIProvider>
+          {children}
+          <ScrollRestoration />
+          <Scripts />
+        </NextUIProvider>
       </body>
     </html>
   );
