@@ -17,6 +17,8 @@
     "@remix-run/serve": "^2.10.2",
     "framer-motion": "^11.3.2",
     "isbot": "^4.1.0",
+    "lucide-react": "^0.408.0",
+    "next-themes": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
